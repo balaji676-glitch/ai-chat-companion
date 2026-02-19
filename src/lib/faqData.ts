@@ -74,5 +74,5 @@ export function findBestAnswer(input: string): string {
     return bestMatch.answer;
   }
 
-  return "That's a great question! I don't have a specific answer for that yet, but feel free to ask about eligibility, application process, stipend, tech stack, duration, mentorship, or certificates. 😊";
+  return "I'm not sure about that one. Could you try rephrasing or asking something else?";
 }
