@@ -1,73 +1,113 @@
-# Welcome to your Lovable project
+# AI FAQ Chatbot 🤖
 
-## Project info
+## 📌 Project Overview
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+This project is an AI-based FAQ chatbot developed as part of an Artificial Intelligence internship task. It uses Natural Language Processing (NLP) techniques to match user questions with the most relevant stored answers and respond through a modern chat interface.
 
-## How can I edit this code?
+The chatbot has a **React frontend** and a **Flask backend** connected through an API, creating a full-stack AI chatbot system.
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🚀 Features
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+* Interactive chatbot UI (React + Tailwind CSS)
+* Flask backend API for handling chat requests
+* NLP-based FAQ matching using TF-IDF similarity
+* Real-time message exchange between frontend and backend
+* Clean responsive chat interface
+* Easy to extend FAQ dataset
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Technologies Used
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Frontend**
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* React (Vite)
+* TypeScript
+* Tailwind CSS
 
-Follow these steps:
+**Backend**
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* Python Flask
+* Scikit-learn (TF-IDF similarity)
+* Flask-CORS
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📂 Project Structure
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```
+ai-chat-companion/
+│
+├── backend/
+│   └── app.py
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   └── ...
+│
+└── package.json
+```
+
+---
+
+## ▶️ How to Run the Project
+
+### 1. Start Backend
+
+Go to backend folder:
+
+```
+cd backend
+python app.py
+```
+
+Backend runs at:
+
+```
+http://127.0.0.1:5000
+```
+
+---
+
+### 2. Start Frontend
+
+Go to project root:
+
+```
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Frontend runs at:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:8080
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 💡 How It Works
 
-## What technologies are used for this project?
+1. User sends a message through the chat interface.
+2. React frontend sends the message to Flask backend API.
+3. Backend compares the question with stored FAQs using TF-IDF similarity.
+4. Best matching answer is returned and displayed in chat.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📈 Future Improvements
 
-## How can I deploy this project?
+* Add generative AI API integration
+* Database-based FAQ storage
+* Conversation memory
+* Deployment to cloud platform
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## 👨‍💻 Author
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Balaji
+AI Internship Project – FAQ Chatbot
