@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ChatMessage, { type Message } from "./ChatMessage";
 import TypingIndicator from "./TypingIndicator";
-import { findBestAnswer } from "@/lib/faqData";
 
 const WELCOME: Message = {
   id: "welcome",
@@ -38,21 +37,42 @@ const ChatWindow = () => {
       sender: "user",
       timestamp: new Date(),
     };
+
     setMessages((prev) => [...prev, userMsg]);
     setInput("");
     setIsTyping(true);
 
-    setTimeout(() => {
-      const answer = findBestAnswer(text);
-      const botMsg: Message = {
-        id: crypto.randomUUID(),
-        text: answer,
-        sender: "bot",
-        timestamp: new Date(),
-      };
-      setIsTyping(false);
-      setMessages((prev) => [...prev, botMsg]);
-    }, 800 + Math.random() * 600);
+    fetch("http://127.0.0.1:5000/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ message: text }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        const botMsg: Message = {
+          id: crypto.randomUUID(),
+          text: data.reply,
+          sender: "bot",
+          timestamp: new Date(),
+        };
+
+        setIsTyping(false);
+        setMessages((prev) => [...prev, botMsg]);
+      })
+      .catch(() => {
+        setIsTyping(false);
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: crypto.randomUUID(),
+            text: "Backend not responding. Please check server.",
+            sender: "bot",
+            timestamp: new Date(),
+          },
+        ]);
+      });
   };
 
   return (
