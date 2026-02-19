@@ -9,7 +9,7 @@ import { findBestAnswer } from "@/lib/faqData";
 
 const WELCOME: Message = {
   id: "welcome",
-  text: "Hey there! 👋 I'm your AI Intern Assistant. Ask me anything about the internship — eligibility, application process, stipend, tech stack, and more!",
+  text: "Hello! 👋 How can I help you today?",
   sender: "bot",
   timestamp: new Date(),
 };
@@ -63,7 +63,7 @@ const ChatWindow = () => {
           AI
         </div>
         <div className="flex-1">
-          <h1 className="text-sm font-semibold text-white">AI Intern Assistant</h1>
+          <h1 className="text-sm font-semibold text-white">AI Chatbot</h1>
           <div className="flex items-center gap-1.5">
             <span className="block h-2 w-2 rounded-full bg-green-400 shadow-sm shadow-green-400/50" />
             <span className="text-xs text-white/80">Online</span>
@@ -94,7 +94,7 @@ const ChatWindow = () => {
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask me anything about the internship..."
+            placeholder="Type a message..."
             className="flex-1 rounded-xl border-muted bg-muted/50 focus-visible:ring-primary"
           />
           <Button
