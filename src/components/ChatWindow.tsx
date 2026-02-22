@@ -9,7 +9,7 @@ import { findBestAnswer } from "@/lib/faqData";
 
 const WELCOME: Message = {
   id: "welcome",
-  text: "Hello! 👋 I'm your AI Intern Assistant. Ask me anything about the internship — eligibility, stipend, tech stack, and more!",
+  text: "Hello! 👋 I'm your Tech Interview Survival Bot. Ask me about coding interviews, resume tips, HR rounds, system design, salary negotiation, or career guidance — let's get you interview-ready!",
   sender: "bot",
   timestamp: new Date(),
 };
@@ -80,8 +80,8 @@ const ChatWindow = ({ pendingQuestion, onQuestionConsumed }: ChatWindowProps) =>
           AI
         </div>
         <div>
-          <h2 className="text-sm font-semibold text-foreground">Chat</h2>
-          <p className="text-xs text-muted-foreground">Ask anything about the AI internship</p>
+          <h2 className="text-sm font-semibold text-foreground">Tech Interview Survival Bot</h2>
+          <p className="text-xs text-muted-foreground">Your AI-powered interview prep companion</p>
         </div>
       </div>
 
@@ -108,7 +108,7 @@ const ChatWindow = ({ pendingQuestion, onQuestionConsumed }: ChatWindowProps) =>
           <Input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask me anything about the internship..."
+            placeholder="Ask me about tech interviews, resumes, or career prep…"
             className="flex-1 rounded-xl border-input bg-background px-4 py-3 text-sm transition-shadow focus-visible:ring-2 focus-visible:ring-primary/30 focus-visible:ring-offset-0 focus-visible:shadow-[0_0_0_4px_hsl(var(--primary)/0.08)]"
           />
           <Button
