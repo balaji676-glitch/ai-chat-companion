@@ -6,54 +6,54 @@ export interface FaqEntry {
 
 export const faqData: FaqEntry[] = [
   {
-    keywords: ["eligible", "eligibility", "who can", "qualification", "qualify", "requirements"],
-    question: "Who is eligible for the AI internship?",
-    answer: "Students currently enrolled in a Computer Science, Data Science, AI/ML, or related program are eligible. We also welcome self-taught developers with demonstrable skills in Python or machine learning.",
+    keywords: ["coding", "dsa", "data structure", "algorithm", "leetcode", "hackerrank", "coding round", "online assessment"],
+    question: "How should I prepare for coding interviews?",
+    answer: "Focus on mastering core data structures (arrays, trees, graphs, hash maps) and algorithms (sorting, searching, dynamic programming). Practice on LeetCode, HackerRank, or Codeforces. Start with easy problems, then move to medium. Aim for 2–3 problems daily and review solutions to learn optimal approaches.",
   },
   {
-    keywords: ["apply", "application", "how to apply", "submit", "register", "sign up"],
-    question: "How do I apply?",
-    answer: "You can apply through our website by filling out the application form with your resume, a brief cover letter, and links to any relevant projects or GitHub repos. Applications are reviewed on a rolling basis.",
+    keywords: ["hr", "behavioral", "tell me about yourself", "strengths", "weaknesses", "hr round", "culture fit"],
+    question: "How do I prepare for HR interviews?",
+    answer: "Practice common behavioral questions using the STAR method (Situation, Task, Action, Result). Prepare a concise 'tell me about yourself' pitch. Research the company's values and culture. Be authentic, show enthusiasm, and have thoughtful questions ready for the interviewer.",
   },
   {
-    keywords: ["duration", "how long", "length", "weeks", "months", "period"],
-    question: "How long is the internship?",
-    answer: "The internship runs for 8–12 weeks, depending on your availability and the project scope. We offer both full-time and part-time tracks.",
+    keywords: ["resume", "cv", "format", "template", "projects", "experience", "ats"],
+    question: "How should I build my resume?",
+    answer: "Keep it to one page. Use a clean, ATS-friendly format. Lead with education, then skills, projects, and experience. Quantify achievements (e.g., 'reduced load time by 40%'). Tailor your resume to each role. Include relevant projects with tech stack details and links to GitHub or live demos.",
   },
   {
-    keywords: ["stipend", "pay", "salary", "compensation", "paid", "money"],
-    question: "Is there a stipend?",
-    answer: "Yes! All interns receive a competitive stipend. The exact amount varies by location and whether you're full-time or part-time. Details are shared during the offer stage.",
+    keywords: ["career", "path", "switch", "transition", "which field", "frontend", "backend", "ml", "data science", "role"],
+    question: "How do I choose the right tech career path?",
+    answer: "Explore different domains — frontend, backend, full-stack, DevOps, ML/AI, or data science. Build small projects in areas that interest you. Consider your strengths: if you love visuals, try frontend; if you enjoy logic and systems, explore backend or infrastructure. Talk to professionals and try internships to narrow your focus.",
   },
   {
-    keywords: ["tech", "stack", "technology", "tools", "framework", "language", "python", "tensorflow"],
-    question: "What tech stack will I work with?",
-    answer: "You'll primarily work with Python, PyTorch/TensorFlow, and popular ML libraries like scikit-learn and Hugging Face Transformers. We also use React for front-end dashboards and PostgreSQL for data storage.",
+    keywords: ["salary", "negotiate", "negotiation", "offer", "compensation", "package", "ctc", "hike"],
+    question: "How do I negotiate salary?",
+    answer: "Research market rates on Glassdoor, Levels.fyi, or LinkedIn Salary. Know your worth based on skills and experience. Never share your current salary first — let the company make an offer. Express enthusiasm but ask for time to review. Counter with data, not emotions. Consider the full package: base, bonus, equity, and benefits.",
   },
   {
-    keywords: ["remote", "work from home", "location", "onsite", "office", "hybrid"],
-    question: "Is the internship remote?",
-    answer: "Yes, we offer fully remote positions. We use Slack, Notion, and daily standups to stay connected. Some optional in-person events may be offered depending on your location.",
+    keywords: ["system design", "architecture", "scalability", "design round", "high level design", "low level design"],
+    question: "How do I prepare for system design interviews?",
+    answer: "Learn core concepts: load balancing, caching, databases (SQL vs NoSQL), message queues, and microservices. Practice designing systems like URL shorteners, chat apps, or news feeds. Use a structured approach: clarify requirements → estimate scale → design components → discuss trade-offs. Resources: 'Designing Data-Intensive Applications' and system design YouTube channels.",
   },
   {
-    keywords: ["project", "what will i do", "tasks", "work on", "assignment", "responsibilities"],
-    question: "What kind of projects will I work on?",
-    answer: "Interns work on real-world AI projects such as building chatbots, training NLP models, developing recommendation systems, and creating data pipelines. You'll contribute to production-level code.",
+    keywords: ["nervous", "anxiety", "confident", "confidence", "stress", "panic", "fear", "calm"],
+    question: "How do I handle interview anxiety?",
+    answer: "Preparation is the best antidote to anxiety. Do mock interviews with friends or on platforms like Pramp. Practice deep breathing before interviews. Remember: it's a conversation, not an interrogation. Reframe rejection as learning. Celebrate small wins and track your progress over time.",
   },
   {
-    keywords: ["mentor", "mentorship", "guidance", "support", "supervisor"],
-    question: "Will I have a mentor?",
-    answer: "Absolutely! Each intern is paired with a senior engineer or researcher who provides weekly 1-on-1 mentorship, code reviews, and career guidance throughout the program.",
+    keywords: ["project", "portfolio", "github", "side project", "showcase", "build"],
+    question: "What projects should I build for my portfolio?",
+    answer: "Build 2–3 solid projects that demonstrate different skills. Ideas: a full-stack CRUD app, a CLI tool, an API integration project, or a data visualization dashboard. Deploy them live, write clean READMEs, and include links in your resume. Quality over quantity — one well-documented project beats five half-finished ones.",
   },
   {
-    keywords: ["certificate", "certification", "completion", "credential"],
-    question: "Do I get a certificate?",
-    answer: "Yes, upon successful completion of the internship you'll receive a certificate of completion along with a detailed recommendation letter if you perform well.",
+    keywords: ["mock", "practice", "interview prep", "resources", "platform", "where to practice"],
+    question: "What are the best resources for interview prep?",
+    answer: "Coding: LeetCode, NeetCode, HackerRank. System Design: Grokking the System Design Interview, ByteByteGo. Behavioral: Big Interview, STAR method guides. Mock Interviews: Pramp, Interviewing.io. General: Cracking the Coding Interview (book), Tech Interview Handbook (GitHub). Consistency matters more than the platform.",
   },
   {
-    keywords: ["deadline", "last date", "when", "start date", "timeline", "schedule"],
-    question: "What are the important dates?",
-    answer: "Applications open on a rolling basis. The next cohort starts at the beginning of each quarter. Check our website for exact dates and deadlines for the current cycle.",
+    keywords: ["first job", "fresher", "new grad", "entry level", "no experience", "beginner", "starting"],
+    question: "How do I land my first tech job?",
+    answer: "Build projects and contribute to open source to compensate for lack of experience. Apply broadly — startups and mid-size companies are often more open to freshers. Network on LinkedIn and attend tech meetups. Tailor each application. Don't wait until you feel 'ready' — apply while you're learning. Persistence is key.",
   },
 ];
 
@@ -74,5 +74,5 @@ export function findBestAnswer(input: string): string {
     return bestMatch.answer;
   }
 
-  return "I'm not sure about that one. Could you try rephrasing or asking something else?";
+  return "I'm not sure about that one. Try asking about coding interviews, resume tips, HR rounds, salary negotiation, or career guidance — I'm here to help you ace your next interview! 💪";
 }

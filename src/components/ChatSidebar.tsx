@@ -1,16 +1,16 @@
-import { Bot, GraduationCap, Clock, DollarSign, FileText, Cpu, HelpCircle } from "lucide-react";
+import { Bot, Code, Users, FileText, Compass, DollarSign, Brain } from "lucide-react";
 
 interface ChatSidebarProps {
   onCategoryClick: (question: string) => void;
 }
 
 const categories = [
-  { label: "Eligibility", icon: GraduationCap, question: "Who is eligible for the AI internship?" },
-  { label: "Duration", icon: Clock, question: "How long is the internship?" },
-  { label: "Stipend", icon: DollarSign, question: "Is there a stipend?" },
-  { label: "Application Process", icon: FileText, question: "How do I apply?" },
-  { label: "Tech Stack", icon: Cpu, question: "What tech stack will I work with?" },
-  { label: "General Help", icon: HelpCircle, question: "What kind of projects will I work on?" },
+  { label: "Coding Interviews", icon: Code, question: "How should I prepare for coding interviews?" },
+  { label: "HR Interviews", icon: Users, question: "How do I prepare for HR interviews?" },
+  { label: "Resume Tips", icon: FileText, question: "How should I build my resume?" },
+  { label: "Career Guidance", icon: Compass, question: "How do I choose the right tech career path?" },
+  { label: "Salary Negotiation", icon: DollarSign, question: "How do I negotiate salary?" },
+  { label: "System Design", icon: Brain, question: "How do I prepare for system design interviews?" },
 ];
 
 const ChatSidebar = ({ onCategoryClick }: ChatSidebarProps) => {
@@ -23,7 +23,7 @@ const ChatSidebar = ({ onCategoryClick }: ChatSidebarProps) => {
             <Bot className="h-5 w-5" />
           </div>
           <div>
-            <h1 className="text-sm font-semibold text-sidebar-foreground">AI Intern Assistant</h1>
+            <h1 className="text-sm font-semibold text-sidebar-foreground">Tech Interview Survival Bot</h1>
             <div className="flex items-center gap-1.5 mt-0.5">
               <span className="block h-2 w-2 rounded-full bg-primary animate-pulse" />
               <span className="text-xs text-sidebar-foreground/60">Online</span>
@@ -54,7 +54,7 @@ const ChatSidebar = ({ onCategoryClick }: ChatSidebarProps) => {
       {/* Footer */}
       <div className="px-6 py-4 border-t border-sidebar-border">
         <p className="text-[11px] text-sidebar-foreground/30 text-center">
-          Powered by AI · Internship FAQ Bot
+          Powered by AI · Interview Prep Assistant
         </p>
       </div>
     </aside>
